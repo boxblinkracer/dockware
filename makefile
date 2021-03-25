@@ -16,8 +16,9 @@ install: ## Installs all dependencies
 	unzip -o orca.zip
 	rm -f orca.zip
 	curl -O https://www.svrunit.com/downloads/svrunit-nightly.zip
-	unzip -o svrunit.zip
-	rm -f svrunit.zip
+	unzip -o svrunit-nightly.zip
+	rm -f svrunit-nightly.zip
+	mv svrunit-nightly.phar svrunit.phar
 
 generate: ## Generates all artifacts for this image
 	@php orca.phar --directory=.
