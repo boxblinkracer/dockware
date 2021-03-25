@@ -15,7 +15,7 @@ install: ## Installs all dependencies
 	curl -O https://orca-build.io/downloads/orca.zip
 	unzip -o orca.zip
 	rm -f orca.zip
-	curl -O https://www.svrunit.com/downloads/svrunit.zip
+	curl -O https://www.svrunit.com/downloads/svrunit-nightly.zip
 	unzip -o svrunit.zip
 	rm -f svrunit.zip
 
