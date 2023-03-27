@@ -1,0 +1,13 @@
+<?php
+
+class ConnectionFactory
+{
+
+    public function build()
+    {
+          $connection = new \Connection();
+
+        return $connection->connect('{{ db.host }}', '{{ db.port }}', '{{ db.user }}', '{{ db.pwd }}', '{{ db.database }}');
+}
+
+}

@@ -245,6 +245,13 @@ if [ $SW_CURRENCY != "not-set" ]; then
   echo "-----------------------------------------------------------"
 fi
 
+if [ $SHOP_REGION != "not-set" ]; then
+  echo "DOCKWARE: Switching Shopware region..."
+  php /var/www/scripts/shopware6/set_region.php $SHOP_REGION
+  echo "-----------------------------------------------------------"
+fi
+
+
 # The access key needs SWSC as a prefix, otherwise shopware
 # won't be able to access the storefront api.
 # The PHP script will automatically add it as a prefix, if
